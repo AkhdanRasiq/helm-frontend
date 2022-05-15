@@ -1,0 +1,64 @@
+.resultContainer {
+  @include mainLayoutContainer();
+}
+
+.resultContentContainer {
+  @include mainLayoutContentContainer();
+}
+
+.resultContent {
+  @include mainLayoutContent();
+
+  .txtResultTitle {
+    @include mainLayoutTxt(200px, 24px);
+  }
+
+  .txtResultHelm {
+    @include mainLayoutTxt(200px, 34px);
+  }
+
+  .txtResultDesc {
+    @include mainLayoutTxt(200px, 15px);
+    font-weight: 500;
+  }
+}
+
+.resultPicture { 
+  @include mainLayoutPicture();
+
+  & > img {
+    height: fit-content;
+  }
+
+  .imgResultPicture {
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  .resultContainer {
+    align-items: flex-end;
+  }
+
+  .resultContentContainer {
+    @include mainLayoutContentContainerMobile();
+  }
+
+  .resultContent {
+    margin-top: 25px;
+    align-items: flex-start;
+  }
+
+  .resultPicture {
+    width: 100%;
+
+    & > img {
+      display: none;
+    }
+
+    .imgResultPicture {
+      @include imgMainStyle(url('../../img/helmetZelos.png'));
+    }
+  }
+}

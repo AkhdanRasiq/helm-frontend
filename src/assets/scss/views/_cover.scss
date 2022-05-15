@@ -1,0 +1,60 @@
+.coverContainer {
+  @include mainLayoutContainer();
+}
+
+.coverContentContainer {
+  @include mainLayoutContentContainer();
+}
+
+.coverContent {
+  @include mainLayoutContent();
+
+  .txtCoverTitle {
+    @include mainLayoutTxt(150px, 28px);
+  }
+
+  .txtCoverDesc {
+    @include mainLayoutTxt(150px, 11px);
+    font-weight: 500;
+  }
+}
+
+.coverPicture {
+  @include mainLayoutPicture();
+
+  & > img {
+    height: fit-content;
+  }
+
+  .imgCoverPicture {
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  .coverContainer {
+    align-items: flex-end;
+  }
+
+  .coverContentContainer {
+    @include mainLayoutContentContainerMobile();
+  }
+
+  .coverContent {
+    margin-top: 25px;
+    align-items: flex-start;
+  }
+
+  .coverPicture {
+    width: 100%;
+
+    & > img {
+      display: none;
+    }
+
+    .imgCoverPicture {
+      @include imgMainStyle(url('../../img/helmCover.png'));
+    }
+  }
+}
