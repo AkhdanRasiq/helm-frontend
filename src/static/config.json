@@ -1,0 +1,9 @@
+{
+  "pages": {
+    "endpoint": {
+      "cover"     : "/",
+      "question"  : "/question",
+      "result"    : "/result"
+    }
+  }
+}
