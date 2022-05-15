@@ -1,12 +1,9 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { RootState } from '../app/store'
+import { IAnswear } from './interface/IAnswearSlice'
 
 
-interface _IQuestionnaire {
-  id: string
-}
-
-const initialState: _IQuestionnaire = {
+const initialState: IAnswear = {
   id: ""
 }
 
