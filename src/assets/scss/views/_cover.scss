@@ -25,10 +25,6 @@
   & > img {
     height: fit-content;
   }
-
-  .imgCoverPicture {
-    display: none;
-  }
 }
 
 
@@ -48,13 +44,5 @@
 
   .coverPicture {
     width: 100%;
-
-    & > img {
-      display: none;
-    }
-
-    .imgCoverPicture {
-      @include imgMainStyle(url('../../img/helmCover.png'));
-    }
   }
 }

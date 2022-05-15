@@ -22,7 +22,6 @@ function CCNCoverView() {
         </div>
         <div className="coverPicture">
           <img src={require('../assets/img/helmCover.png')} alt="helm_cover" />
-          <div className="imgCoverPicture" />
         </div>
       </div>
     </div>

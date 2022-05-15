@@ -29,10 +29,6 @@
   & > img {
     height: fit-content;
   }
-
-  .imgResultPicture {
-    display: none;
-  }
 }
 
 
@@ -52,13 +48,5 @@
 
   .resultPicture {
     width: 100%;
-
-    & > img {
-      display: none;
-    }
-
-    .imgResultPicture {
-      @include imgMainStyle(url('../../img/helmetZelos.png'));
-    }
   }
 }

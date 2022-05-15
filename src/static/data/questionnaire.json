@@ -45,38 +45,32 @@
     {
       "id"      : "111",
       "name"    : "Newway",
-      "voucher" : "NEWWAY20",
-      "img"     : ""
+      "voucher" : "NEWWAY20"
     },
     {
       "id"      : "112",
       "name"    : "Newzyra",
-      "voucher" : "NEWZYRA20",
-      "img"     : ""
+      "voucher" : "NEWZYRA20"
     },
     {
       "id"      : "121",
       "name"    : "Zelos",
-      "voucher" : "ZEOLOS20",
-      "img"     : ""
+      "voucher" : "ZEOLOS20"
     },
     {
       "id"      : "122",
       "name"    : "Yelos",
-      "voucher" : "YELOS20",
-      "img"     : ""
+      "voucher" : "YELOS20"
     },
     {
       "id"      : "21",
       "name"    : "NewNomad",
-      "voucher" : "NEWNOMAD",
-      "img"     : ""
+      "voucher" : "NEWNOMAD"
     },
     {
       "id"      : "22",
       "name"    : "Adventura",
-      "voucher" : "ADVENTURA20",
-      "img"     : ""
+      "voucher" : "ADVENTURA20"
     }
   ]
 }
