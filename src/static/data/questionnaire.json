@@ -1,0 +1,74 @@
+{
+  "listOfQuestion" : [
+    {
+      "id": [""],
+      "question": "What do you use motorcycle for?",
+      "answear": [
+        "Commute in the city",
+        "Traveling"
+      ]
+    },
+    {
+      "id": ["1"],
+      "question": "How often are you commuting?",
+      "answear": [
+        "Pretty often, like everyday",
+        "Not that often, just to hangout"
+      ]
+    },
+    {
+      "id": ["11", "12"],
+      "question": "What style do you prefer?",
+      "answear": [
+        "Formal",
+        "Casual"
+      ]
+    },
+    {
+      "id": ["2"],
+      "question": "Where did you travel into?",
+      "answear": [
+        "Beach",
+        "Mountain"
+      ]
+    }
+  ],
+  "listOfResult": [
+    {
+      "id": "111",
+      "name": "Newway",
+      "voucher": "NEWWAY20",
+      "img": ""
+    },
+    {
+      "id": "112",
+      "name": "Newzyra",
+      "voucher": "NEWZYRA20",
+      "img": ""
+    },
+    {
+      "id": "121",
+      "name": "Zelos",
+      "voucher": "ZEOLOS20",
+      "img": ""
+    },
+    {
+      "id": "122",
+      "name": "Yelos",
+      "voucher": "YELOS20",
+      "img": ""
+    },
+    {
+      "id": "21",
+      "name": "NewNomad",
+      "voucher": "NEWNOMAD",
+      "img": ""
+    },
+    {
+      "id": "22",
+      "name": "Adventura",
+      "voucher": "ADVENTURA20",
+      "img": ""
+    }
+  ]
+}

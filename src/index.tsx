@@ -5,20 +5,24 @@ import "./assets/scss/styles.scss"
 import * as serviceWorker from "./serviceWorker"
 import router from './static/router'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { store } from './app/store';
+import { Provider } from 'react-redux';
 
 import CCNHeader from "./components/main/CCNHeader"
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-    <CCNHeader />
-      <Routes>
-        {router.map((data) => (
-          <Route key={data.id} path={data.path} element={<data.element />} />
-        ))}
-      </Routes>
-    </Router>
+    <Provider store={store}>
+      <Router>
+      <CCNHeader />
+        <Routes>
+          {router.map((data) => (
+            <Route key={data.id} path={data.path} element={<data.element />} />
+          ))}
+        </Routes>
+      </Router>
+    </Provider >
   </React.StrictMode>
 , document.getElementById("root"))
 
