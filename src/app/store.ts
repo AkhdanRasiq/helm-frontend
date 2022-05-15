@@ -1,8 +1,10 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
+import answearReducer from '../features/answearSlice'
 
 
 export const store = configureStore({
   reducer: {
+    answear: answearReducer
   },
 });
 

@@ -3,14 +3,16 @@ import CONFIG from '../../static/config.json'
 import Tooltip from '@mui/material/Tooltip'
 
 
-interface IActionButtonProps {
-  className   ?: string,
-  a_strText   : string,
-  filled      ?: boolean,
-  copyText    ?: boolean
+interface _IActionButtonProps {
+  className         ?: string,
+  a_strText         : string,
+  filled            ?: boolean,
+  copyText          ?: boolean
+  a_strValue        ?: string,
+  onClickCallback   ?: (event: any) => void
 }
 
-function CCNActionButton({ className, a_strText, filled, copyText }: IActionButtonProps) {
+function CCNActionButton({ className, a_strText, filled, copyText, onClickCallback = ()=>{}, a_strValue = "" }: _IActionButtonProps) {
   const [tooltipOpen, setTooltipOpen] = useState(false)
   const [tooltipText, setTooltipText] = useState("")
 
@@ -44,7 +46,7 @@ function CCNActionButton({ className, a_strText, filled, copyText }: IActionButt
         `btnActionContainer 
         ${filled ? "btnActionFilled" : ""} 
         ${className}`}
-        onClick={copyText ? handleOpenTooltip : ()=>{}}
+        onClick={copyText ? handleOpenTooltip : () => onClickCallback(a_strValue)}
       >
         <p>{a_strText}</p>
       </button>

@@ -5,8 +5,8 @@ import "./assets/scss/styles.scss"
 import * as serviceWorker from "./serviceWorker"
 import router from './static/router'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { store } from './app/store';
-import { Provider } from 'react-redux';
+import { store } from './app/store'
+import { Provider } from 'react-redux'
 
 import CCNHeader from "./components/main/CCNHeader"
 
