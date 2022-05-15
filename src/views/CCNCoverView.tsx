@@ -1,9 +1,30 @@
 import React from "react"
+import { Link } from 'react-router-dom'
+import CONFIG from '../static/config.json'
+import CCNActionButton from "../components/button/CCNActionButton"
+
 
 function CCNCoverView() {
   return (
     <div className="coverContainer">
-      <p>Hello World</p>
+      <div className="coverContentContainer">
+        <div className="coverContent">
+          <p className="txtCoverTitle">Know your Helmet</p>
+          <p className="txtCoverDesc mt-[10px]">Find you perfect helmet today in HELMETCO</p>
+
+          <Link to={CONFIG.pages.endpoint.question}>
+            <CCNActionButton
+              className="mt-[20px]"
+              a_strText="Start Now"
+              filled
+            />
+          </Link>
+        </div>
+        <div className="coverPicture">
+          <img src={require('../assets/img/helmCover.png')} alt="helm_cover" />
+          <div className="imgCoverPicture" />
+        </div>
+      </div>
     </div>
   )
 }

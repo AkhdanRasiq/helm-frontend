@@ -1,0 +1,86 @@
+.coverContainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.coverContentContainer {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  max-width: 1500px;
+}
+
+.coverContent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .txtCoverTitle {
+    width: 150px;
+    font-size: 28px;
+  }
+
+  .txtCoverDesc {
+    width: 150px;
+    font-size: 11px;
+    font-weight: 500;
+  }
+}
+
+.coverPicture {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  & > img {
+    height: fit-content;
+  }
+
+  .imgCoverPicture {
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  .coverContainer {
+    align-items: flex-end;
+  }
+
+  .coverContentContainer {
+    width: 80vw;
+    margin-bottom: 10vh;
+    max-width: 300px;
+    flex-direction: column-reverse;
+  }
+
+  .coverContent {
+    margin-top: 25px;
+    align-items: flex-start;
+  }
+
+  .coverPicture {
+    width: 100%;
+
+    & > img {
+      display: none;
+    }
+
+    .imgCoverPicture {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-image: url('../img/helmCover.png');
+      background-size: 100% auto;
+    }
+  }
+}

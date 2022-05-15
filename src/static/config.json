@@ -5,5 +5,6 @@
       "question"  : "/question",
       "result"    : "/result"
     }
-  }
+  },
+  "tooltip_timeout_ms": 1500
 }
