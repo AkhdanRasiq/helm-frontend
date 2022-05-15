@@ -43,7 +43,7 @@ function CCNActionButton({ className, a_strText, filled, copyText, onClickCallba
       disableTouchListener
     >
       <button className={
-        `btnActionContainer 
+        `btnActionContainer px-[10px]
         ${filled ? "btnActionFilled" : ""} 
         ${className}`}
         onClick={copyText ? handleOpenTooltip : () => onClickCallback(a_strValue)}
