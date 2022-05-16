@@ -5,17 +5,17 @@ import { createMemoryHistory } from 'history'
 import { store } from '../../src/app/store'
 import { Provider } from 'react-redux'
 
-import CCNCoverView from "../../src/views/CCNCoverView"
+import CCNQuestionView from "../../src/views/CCNQuestionView"
 
 
-describe("CCNCoverView.tsx", () => {
-  const history = createMemoryHistory({ initialEntries: ['/'] })
+describe("CCNQuestionView.tsx", () => {
+  const history = createMemoryHistory({ initialEntries: ['/question'] })
 
   it("Render Properly", async () => {
     const wrapper = render(
       <Router location={history.location} navigator={history}>
         <Provider store={store}>
-          <CCNCoverView />
+          <CCNQuestionView />
         </Provider>
       </Router>
     )
@@ -26,14 +26,15 @@ describe("CCNCoverView.tsx", () => {
     const { container } = render(
       <Router location={history.location} navigator={history}>
         <Provider store={store}>
-          <CCNCoverView />
+          <CCNQuestionView />
         </Provider>
       </Router>
     )
-    expect(history.location.pathname).toBe('/')
-
-    const btnCheckout: HTMLElement  = container.querySelector('.btnStartCover') as HTMLElement
-    btnCheckout.click()
     expect(history.location.pathname).toBe('/question')
+
+    const btnCheckout: HTMLElement  = container.querySelector('.btnQuestionAction2') as HTMLElement
+    btnCheckout.click()
+    btnCheckout.click()
+    expect(history.location.pathname).toBe('/result')
   })
 })
