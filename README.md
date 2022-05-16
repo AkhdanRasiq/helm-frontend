@@ -1,22 +1,59 @@
-# cra-template-tailwindcss-typescript
+# HELMETCO-Frontend!!!
+## MAIN TECH STACK
 
-A streamlined [Tailwind CSS v3.x](https://tailwindcss.com) template for [Create React App](https://github.com/facebook/create-react-app) in [TypeScript](https://www.typescriptlang.org/).
+1. ReactJS (TypeScript)
+2. Redux
+3. Sass
+4. Material-UI
+5. TailwindCSS
 
-> This template installs and sets up [Tailwind CSS](https://tailwindcss.com) with TypeScript support.
+## DEV TECH STACK
 
-## Usage
+1. Firebase
+2. Jest(Typescript via Babel)
 
-```bash
-npx create-react-app --template tailwindcss-typescript
+<br />
+<br />
+
+# DEMO ACCESS
+
+[DEMO Here!](https://helm-co.web.app)
+
+<br />
+
+# Command List
+
+### Project setup
+```
+npm install
 ```
 
-## Credits
+### Compiles and hot-reloads for development
+```
+npm start
+```
 
-This project was made possible thanks to the following projects.
+### Compiles and minifies for production
+```
+npm run build
+```
 
-1. [GeoffSelby/cra-template-tailwindcss](https://github.com/GeoffSelby/cra-template-tailwindcss) - A streamlined Tailwind CSS template for Create React App (in JavaScript).
-2. [cra-template-typescript](https://github.com/facebook/create-react-app/tree/master/packages/cra-template-typescript) - An official TypeScript template for create-react-app.
+### Run your unit tests
+```
+npm run test
+```
 
-## License
+### Run your unit tests with hot-reloads
+```
+npm run test:watch
+```
 
-MIT © [Sung M. Kim](https://sung.codes)
+### Run your unit tests in band
+```
+npm run test:unit-band
+```
+
+### Run your unit tests with more error detail
+```
+npm run test:detect-leak
+```

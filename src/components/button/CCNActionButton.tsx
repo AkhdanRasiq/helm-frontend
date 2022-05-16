@@ -48,7 +48,7 @@ function CCNActionButton({ className, a_strText, filled, copyText, onClickCallba
         ${className}`}
         onClick={copyText ? handleOpenTooltip : () => onClickCallback(a_strValue)}
       >
-        <p>{a_strText}</p>
+        <p className='btnActionText'>{a_strText}</p>
       </button>
     </Tooltip>
   )

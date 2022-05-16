@@ -27,7 +27,9 @@ Object {
         undefined"
                 data-mui-internal-clone-element="true"
               >
-                <p>
+                <p
+                  class="btnActionText"
+                >
                   Commute in the city
                 </p>
               </button>
@@ -42,7 +44,9 @@ Object {
         btnQuestionAction2"
                 data-mui-internal-clone-element="true"
               >
-                <p>
+                <p
+                  class="btnActionText"
+                >
                   Traveling
                 </p>
               </button>
@@ -75,7 +79,9 @@ Object {
         undefined"
               data-mui-internal-clone-element="true"
             >
-              <p>
+              <p
+                class="btnActionText"
+              >
                 Commute in the city
               </p>
             </button>
@@ -90,7 +96,9 @@ Object {
         btnQuestionAction2"
               data-mui-internal-clone-element="true"
             >
-              <p>
+              <p
+                class="btnActionText"
+              >
                 Traveling
               </p>
             </button>

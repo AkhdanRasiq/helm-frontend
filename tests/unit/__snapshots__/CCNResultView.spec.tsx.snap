@@ -40,7 +40,9 @@ Object {
         mt-[20px] mr-[25px] !w-[175px]"
               data-mui-internal-clone-element="true"
             >
-              <p>
+              <p
+                class="btnActionText"
+              >
                 NEWWAY20
               </p>
             </button>
@@ -93,7 +95,9 @@ Object {
         mt-[20px] mr-[25px] !w-[175px]"
             data-mui-internal-clone-element="true"
           >
-            <p>
+            <p
+              class="btnActionText"
+            >
               NEWWAY20
             </p>
           </button>

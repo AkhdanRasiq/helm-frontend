@@ -34,7 +34,9 @@ Object {
         btnStartCover mt-[20px]"
                 data-mui-internal-clone-element="true"
               >
-                <p>
+                <p
+                  class="btnActionText"
+                >
                   Start Now
                 </p>
               </button>
@@ -82,7 +84,9 @@ Object {
         btnStartCover mt-[20px]"
               data-mui-internal-clone-element="true"
             >
-              <p>
+              <p
+                class="btnActionText"
+              >
                 Start Now
               </p>
             </button>
