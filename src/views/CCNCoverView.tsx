@@ -14,7 +14,7 @@ function CCNCoverView() {
 
           <Link to={CONFIG.pages.endpoint.question}>
             <CCNActionButton
-              className="mt-[20px]"
+              className="btnStartCover mt-[20px]"
               a_strText="Start Now"
               filled
             />

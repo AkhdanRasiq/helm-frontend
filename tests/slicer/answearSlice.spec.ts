@@ -1,8 +1,8 @@
-import reducer, { setAnswearId, clearAnswearId } from "../../../src/features/answearSlice"
+import reducer, { setAnswearId, clearAnswearId } from "../../src/features/answearSlice"
 import { AnyAction } from '@reduxjs/toolkit'
 
 import { answearDefault_mockData } from '../mockData/answearSlice_mockData'
-import { IAnswear } from "../../../src/features/interface/IAnswearSlice"
+import { IAnswear } from "../../src/features/interface/IAnswearSlice"
 
 
 const testData = answearDefault_mockData

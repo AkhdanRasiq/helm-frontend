@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useState } from "react"
+import React, { useLayoutEffect, useState } from "react"
 import { useAppSelector } from "../app/hooks"
 import CCNActionButton from "../components/button/CCNActionButton"
 import { getAnswearId } from "../features/answearSlice"
@@ -11,7 +11,6 @@ import yelos      from "../assets/img/yelos.png"
 import zelos      from "../assets/img/zelos.png"
 import newzyra    from "../assets/img/newzyra.png"
 import newway     from "../assets/img/newway.png"
-
 
 
 function CCNResultView() {
